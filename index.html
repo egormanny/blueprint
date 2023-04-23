@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blueprint</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Roboto:wght@100;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.svg">
+            <span>Blueprint</span>
+        </div>
+        <div class="search">
+            <input id="search" type="text" placeholder="Start typing..." >
+        </div>
+        <div class="actions">
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-right-from-bracket"></i>
+        </div>
+    </header>
+    <main>
+        <div class="heading">
+            <h1>Employees</h1>
+            <select id="sort">
+                <option value="name,asc">Name - Asc</option>
+                <option value="name,desc">Name - Desc</option>
+                <option value="secondName,asc">Second Name - Asc</option>
+                <option value="secondName,desc">Second Name - Desc</option>
+                <option value="age,asc">Age - Asc</option>
+                <option value="age,desc">Age - Desc</option>
+                <option value="salary,asc">Salary - Asc</option>
+                <option value="salary,desc">Salary - Desc</option>
+                <option value="experience,asc">Experience - Asc</option>
+                <option value="experience,desc">Experience - Desc</option>
+            </select>
+            <!-- <button id="click-btn">
+                CLICK ME
+            </button> -->
+        </div>
+        <div class="employee-table">
+            <div class="employee-table-heading">
+                <div class="employee-table-row">
+                    <div class="employee-table-item">Name</div>
+                    <div class="employee-table-item">Second Name</div>
+                    <div class="employee-table-item">Age</div>
+                    <div class="employee-table-item">Position</div>
+                    <div class="employee-table-item">Experince</div>
+                    <div class="employee-table-item">Sallary</div>
+                    <div class="employee-table-item">Sick Day</div>
+                    <div class="employee-table-item">Actions</div>
+                </div>   
+            </div>
+            <div class="employee-table-body">
+            </div>
+        </div>
+    </main>
+    <script src="scripts/employees.js"></script>
+    <script src="scripts/main.js"></script>
+    <!-- <script src="scripts/events.js"></script> -->
+</body>
+</html>
+
+
